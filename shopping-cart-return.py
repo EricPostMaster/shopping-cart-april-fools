@@ -44,7 +44,7 @@ with st.spinner("Using totally unbiased AI to see if you have a good excuse...")
 col1, col2 = st.beta_columns([1,3])
 
 with col1:
-    st.write("Verdict:")
+    st.header("Verdict:")
 
 with col2:
     if legs == "2":
