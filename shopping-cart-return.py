@@ -41,12 +41,12 @@ kids = st.slider(
 with st.spinner("Using totally unbiased AI to see if you have a good excuse..."):
     time.sleep(2.5)
 
-st.header("Verdict:")
+st.write("Verdict:")
 
 if legs == "2":
-    st.write("Return your cart!")
+    st.header("Return your cart!")
 else:
-    st.write("Okay, you get a pass.")
+    st.header("Okay, you get a pass.")
 
 st.image("https://i.imgflip.com/amucx.jpg", caption="Not sure if you should put your cart away? Got you covered.")
 
