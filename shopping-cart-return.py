@@ -41,12 +41,17 @@ kids = st.slider(
 with st.spinner("Using totally unbiased AI to see if you have a good excuse..."):
     time.sleep(2.5)
 
-st.write("Verdict:")
+col1, col2 = st.beta_columns([1,3])
 
-if legs == "2":
-    st.header("Return your cart!")
-else:
-    st.header("Okay, you get a pass.")
+with col1:
+    st.write("Verdict:")
+
+with col2:
+    if legs == "2":
+        st.header("Return your cart!")
+    else:
+        st.header("Okay, you get a pass.")
+
 
 st.image("https://i.imgflip.com/amucx.jpg", caption="Not sure if you should put your cart away? Got you covered.")
 
